@@ -1,0 +1,42 @@
+﻿\problemname{Den roliga målaren}
+Efter mycket tänkande kom lilla Storm fram till att amogus är den universiella formen. Han börjar direkt rita upp den
+i så kallat "ASCII-art". Efter mycket slit har Storm skapat ett mästerverk. Efter ett väl utfört jobb behöver man
+självklart ett gott glas mjölk. När han kommer tillbaka visar det sig att hans katt har ändrat en massa av bokstäverna!
+Storm kommer ihåg hur bilden såg ut originellt och vill nu ha din hjälp att räkna ut hur många bokstäver han behöver ändra
+för att få tillbaka sin originella amogus.
+
+Du får två stycken $R*C$ stora rutnät, storms bild just nu och storms originella bild. Skriv ett program som beräknar
+minsta antalet förändringar storm behöver göra för att få tillbaka den originella bilden.
+
+\section*{Indata}
+Den första raden innehåller två heltal: $1\leq R \leq 1000$ och $1 \leq C \leq 1000$ -- antalet rader och kolumner.
+
+Därefter följer $R$ rader, vardera $C$ tecken, som beskriver storms målning. 
+
+Efter en tom rad följer $R$ rader med $C$ tecken som beskriver storms originella bild. 
+
+
+\section*{Utdata}
+Skriv ut ett heltal -- minsta antalet ändringar storm behöver göra för att få tillbaka den originella bilden.
+
+\section*{Poängsättning}
+Din lösning kommer att testas på en mängd testfallsgrupper.
+För att få poäng för en grupp så måste du klara alla testfall i gruppen.
+
+\noindent
+\begin{tabular}{| l | l | p{12cm} |}
+  \hline
+  Grupp & Poängvärde & Gränser \\ \hline
+  $1$   & $20$       & $R=1$ och $C=1$ \\ \hline
+  $2$   & $30$       & Bilderna består endast av bokstäverna . och #\\ \hline
+  $3$   & $20$       & $R \leq 100$ och $C \leq 100$  \\ \hline
+  $4$   & $50$       & Inga ytterligare begränsningar  \\ \hline
+\end{tabular}
+
+Notera att vissa exempelfall är inte giltiga i vissa testfallsgrupper.
+
+
+\section*{Förklaring av exempelfall}
+I första exemplet skiljer sig amogusen på 4 ställen: vid bokstäverna O och M. Därmed måste han ändra minst 4 bokstäver.
+
+I andra exemplet skiljer de sig på ett ställe, och han behöver därmed förändra en pixel.
