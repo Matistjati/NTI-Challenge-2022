@@ -1,0 +1,6 @@
+# Generator
+sudo mkdir -p c:
+cd c:/users/matis/desktop
+
+# Docker
+docker run --rm -it -v C:/Users/Matis/Desktop/nti_challenge:/kattis problemtools/full
