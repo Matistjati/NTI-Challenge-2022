@@ -57,3 +57,5 @@ tc g3-7 gen_random n=6969 t=507374651 l=9 seed=4768467
 tc g3-8 gen_random n=2252 t=908716573 l=9 seed=24572457
 tc g3-9 gen_random n=2556 t=262667442 l=9 seed=4679679
 tc g3-10 gen_random n=5970 t=958709819 l=9 seed=46796749
+tc g3-11 gen_random n=2 t=2000000000 l=9 seed=873658
+tc g3-12 gen_random n=3 t=2000000000 l=9 seed=46759421

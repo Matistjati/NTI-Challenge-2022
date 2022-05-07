@@ -1,0 +1,35 @@
+\problemname{Flygande fika}
+Det är en helt vanlig morgon i fikaklubben, dålig musik, roliga skämt (amogus), ända tills Alfred råkar snubbla med kakasken och alla $M$ kakor flyger rakt fram!
+Tack vare NTI:s fenomenala utbildning beräknar de $N$ eleverna direkt var kakorna kommer landa. Det råkar vara så att alla i klassrummet står precis i linjen där alla kakorna landar.
+För att inte missa 5-sekundersregeln undrar nu varje person i klassrummet vilken kaka som kommer landa närmast de. 
+
+Mer specifikt kommer alla $N$ person att stå på samma linje som de $M$ kakorna landar på, denna är numrerad 0 till $L$.
+
+
+\section*{Indata}
+Den första raden innehåller två heltal: $1\leq N \leq 10^5$ och $1 \leq M \leq 10^5$ -- antalet personer och antalet kakor. 
+Därefter följer $N$ heltal $0 \leq P \leq L$, positionen på alla personer.
+Nästa rad innehåller $M$ heltal $0 \leq K \leq L$, positionen där kakorna landar.
+Personer och kakor är sorterade från lägst till störst och det kan inte finnas flera personer eller flera kakor på samma ställe.
+Det är garanterat att $L \leq 10^9$.
+
+\section*{Utdata}
+Skriv ut ett $N$ heltal -- indexet på kakan som landar närmast varje person. Om det finns flera kakor som landar lika nära kan du skriva ut vilken som helst.
+
+\section*{Poängsättning}
+Din lösning kommer att testas på en mängd testfallsgrupper.
+För att få poäng för en grupp så måste du klara alla testfall i gruppen.
+
+\noindent
+\begin{tabular}{| l | l | p{12cm} |}
+  \hline
+  Grupp & Poängvärde & Gränser \\ \hline
+  $1$   & $15$       & Alla elever har mindre x-koordinat är kakorna \\ \hline
+  $2$   & $15$       & $N=1$ \\ \hline
+  $3$   & $30$       & $L \leq 5*10^5$ \\ \hline
+  $4$   & $40$       & Inga ytterligare begränsningar  \\ \hline
+\end{tabular}
+
+\section*{Förklaring av exempelfall}
+I första exemplet är kakan med index 0 närmast första personen, kakorna med index 0 och 1 lika nära person andra personen och kakan med index 2 närmast den tredje.
+I Andra exemplet är kakan med index 0 närmast de två första personen och kakan med index 1 närmast den tredje.
