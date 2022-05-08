@@ -1,7 +1,7 @@
 # Generator
 sudo mkdir -p c:
 sudo mount -o bind /mnt/c c:
-cd c:/users/matis/desktop
+cd c:/users/matis/desktop/nti_challenge/
 
 # Docker
 docker run --rm -it -v C:/Users/Matis/Desktop/nti_challenge:/kattis problemtools/full
