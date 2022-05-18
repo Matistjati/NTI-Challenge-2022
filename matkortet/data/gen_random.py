@@ -17,25 +17,17 @@ def cmdlinearg(name, default=None):
 
 
 random.seed(int(cmdlinearg('seed')))
-r = int(cmdlinearg('r'))
-c = int(cmdlinearg('c'))
-percent_trees = float(cmdlinearg('percent_trees'))
+n_wrong = int(cmdlinearg('wrong'))
 
-print(r,c)
-
-grid = [['.' for i in range(c)] for j in range(r)]
+code = [str(random.randint(0,9)) for i in range(4)]
 
 seen = set()
+done = 0
+while done < n_wrong:
+    i = random.randint(0,3)
+    if i not in seen:
+        code[i] = '.'
+        seen.add(i)
+        done += 1
 
-for i in range(int(percent_trees*r*c)):
-    while True:
-        coord = (random.randint(0,r-1),random.randint(0,c-1))
-        if coord not in seen:
-            seen.add(coord)
-            grid[coord[0]][coord[1]] = '#'
-            break
-
-for i in range(r):
-    for j in range(c):
-        print(grid[i][j],end="")
-    print("")
+print("".join(code))

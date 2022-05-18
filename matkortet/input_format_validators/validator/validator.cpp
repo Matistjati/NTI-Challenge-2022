@@ -13,15 +13,12 @@ void ReadLn(int len) {
 
 void run()
 {
-	int r = Int(1, Arg("max_r")); Space();
-    int c = Int(1, Arg("max_c")); Endl();
-    assert(c>=r*3);
-
-    for (int i = 0; i < r; i++)
+    for (int i = 0; i < 4; i++) 
     {
-        ReadLn(c);
+        char c = Char();
+        assert((c>='0'&&c<='9')||c=='.');
     }
-
-
+    
+    Endl();
 	Eof();
 }
