@@ -1,0 +1,35 @@
+\problemname{Mikrofonen}
+Det visar sig att trumman överlevde Mattias. Kanske kommer namnet "The Destroyer" från att folks trumhinnor spräcks av volymen.
+Vi installerade en mikrofon i musikrummet som avläser ljudstyrkan i decibel en gång i sekunden under $N$ sekunder. 
+Trumhinnan spräcks vid 165 decibel, men mikrofonen är inte helt pålitlig. Ibland kan den hävda helt osannolika värden.
+
+Mer specifikt accepterar vi en ljudstyrka $V$ om $V>=l$ och $V<=h$ för två heltal l och h. Du undrar nu vad medelvärdet på volymen var.
+
+
+\section*{Indata}
+Den första raden innehåller tre heltal: $1\leq N \leq 10^4$, $20 \leq l \leq 300$ och $20 \leq h \leq 300$  -- antalet personer, lägsta rimliga och högsta rimliga volymen. 
+Därefter följer $N$ heltal $-10^9 \leq V \leq 10^9$, de avmätta volymerna.
+Det är garanterat att minst ett tal är inom gränserna.
+
+\section*{Utdata}
+Skriv ut ett decimaltal -- medelvärdet på volymen över alla rimliga värden.
+Svaret kommer accepteras om det har ett relativt eller absolut fel om högst $10^{-5}$.
+Dvs, om ditt svar är $a$ och det korrekta svaret är $b$, så accepteras ditt svar om
+antingen $|a-b| \le 10^{-5}$ eller $\frac{|a-b|}{|b|} \le 10^{-5}$.
+
+\section*{Poängsättning}
+Din lösning kommer att testas på en mängd testfallsgrupper.
+För att få poäng för en grupp så måste du klara alla testfall i gruppen.
+
+\noindent
+\begin{tabular}{| l | l | p{12cm} |}
+  \hline
+  Grupp & Poängvärde & Gränser \\ \hline
+  $1$   & $15$       & $N=1$ \\ \hline
+  $1$   & $30$       & $l \leq V \leq h$ för alla v \\ \hline
+  $3$   & $55$       & Inga ytterligare begränsningar \\ \hline
+\end{tabular}
+
+\section*{Förklaring av exempelfall}
+I första exemplet ligger 230 utanför spannet av rimliga mätvärden, medelvärdet blir då $\frac{50+72+80}{3} = 67.333$.
+I Andra exemplet ligger endast 40 inom intervallet, så svaret blir 40.
