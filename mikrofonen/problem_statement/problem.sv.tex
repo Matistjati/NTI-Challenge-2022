@@ -1,13 +1,13 @@
 \problemname{Mikrofonen}
 Det visar sig att trumman överlevde Mattias. Kanske kommer namnet "The Destroyer" från att folks trumhinnor spräcks av volymen.
 Vi installerade en mikrofon i musikrummet som avläser ljudstyrkan i decibel en gång i sekunden under $N$ sekunder. 
-Trumhinnan spräcks vid 165 decibel, men mikrofonen är inte helt pålitlig. Ibland kan den hävda helt osannolika värden.
+Trumhinnan spräcks vid 165 decibel, men mikrofonen är inte helt pålitlig. Ibland kan den mäta helt osannolika värden.
 
-Mer specifikt accepterar vi en ljudstyrka $V$ om $V>=l$ och $V<=h$ för två heltal l och h. Du undrar nu vad medelvärdet på volymen var.
+Mer specifikt accepterar vi en ljudstyrka om $l \ge V \leq h$ för två givna heltal l och h. Du undrar nu vad medelvärdet på volymen var (om man bara räknar med rimliga värden).
 
 
 \section*{Indata}
-Den första raden innehåller tre heltal: $1\leq N \leq 10^4$, $20 \leq l \leq 300$ och $20 \leq h \leq 300$  -- antalet personer, lägsta rimliga och högsta rimliga volymen. 
+Den första raden innehåller tre heltal: $1\leq N \leq 10^4$, $20 \leq l \leq 300$ och $20 \leq h \leq 300$  -- antalet sekunder, lägsta rimliga och högsta rimliga volymen. 
 Därefter följer $N$ heltal $-10^9 \leq V \leq 10^9$, de avmätta volymerna.
 Det är garanterat att minst ett tal är inom gränserna.
 

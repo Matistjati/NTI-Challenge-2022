@@ -1,14 +1,17 @@
 \problemname{Olle dole doff}
-Olle ramsa. 
-Joshua föreslår istället en ramsa som är $T$ ord lång. Vem kommer bli vald efter att Olle efter en stund blivit klar med ramsan?
+Rickard Larssen har insett att hans biovisningar blivit alldeles för populära; det är inte hållbart att låta biljetten gå till den som först svarar på formuläret.
+Folk kan ju ha olika snabba internet, eller hålla olika bra koll på sin mail. 
+Han har istället kommit på idén att ställa upp alla intresserade på en lång rad, och göra en gammal hederlig ramsa för att bestämma vem som får nästa biljett. 
+
+Ramsan är $T$ ord lång, och under ramsans gång pekar Rickard på en person för varje ord i ramsan. Det innebär att det blir den $T$:te personen som får biobiljetten. Om det finns fler ord i ramsan än det finns personer (vilket det förhoppningsvis gör, annars är det en ganska dålig ramsa) så börjar Rickard om på den första personen varje gång han gått igenom alla personer.
 
 \section*{Indata}
-Den första raden innehåller två heltal: $1 \leq N \leq 10000$ och $1\leq T \leq 2*10^9$, antalet personer och längden på ramsan.
-Nästa rad innehåller $N$ namn på personer som Olle ska välja mellan.
+Den första raden innehåller två heltal: $1 \leq N \leq 10000$ och $1\leq T \leq 2*10^9$, antalet personer som vill ha biljetten och antalet ord i ramsan.
+Nästa rad innehåller $N$ stycken namn på de som vill ha biljetten. Namnen står i den ordning som Rickard kommer att gå igenom dem i listan.
 Det är garanterat att varje ord är max 10 bokstäver långt.
 
 \section*{Utdata}
-Du ska skriva ut en sträng: personen Olle väljer efter att ha gjort färdigt den $T$ långa ramsan.
+Du ska skriva ut en sträng: personen Rickard väljer efter att ha gjort färdigt den $T$ långa ramsan.
 
 \section*{Poängsättning}
 Din lösning kommer att testas på en mängd testfallsgrupper.

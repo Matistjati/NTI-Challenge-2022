@@ -185,14 +185,13 @@ void flip(ll r) {
 string getans()
 {
     string res = "";
-    for (ll i = 0; i < sizes.size(); i++) {
+     for(ll i = 0; i < sizes.size(); i++) {
         if (flipped[i]) {
-            for (ll j = 0; j < sizes[i]; j++) {
-                res += !blocks[i][j];
+            for(ll j = sizes[i]; j > 0; j--) {
+                res += !blocks[i][j-1];
             }
-        }
-        else {
-            for (ll j = 0; j < sizes[i]; j++) {
+        } else {
+            for(ll j = 0; j < sizes[i]; j++) {
                 res += blocks[i][j];
             }
         }

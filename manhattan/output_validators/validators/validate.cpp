@@ -35,6 +35,8 @@ int main(int argc, char **argv)
         ans += abs(cities[i].first-cities[i-1].first)+abs(cities[i].second-cities[i-1].second);
     }
 
+    assert(ans < int(2e9));
+
     ll user_ans;
     if (!(author_out >> user_ans)) wrong_answer("No output");
 

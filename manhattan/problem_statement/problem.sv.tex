@@ -1,11 +1,16 @@
-\problemname{Flygande fika}
-Joshua är törstig och har hört att Olles föräldrar inte är hemma. Han måste dock köra förbi $N$ stycken städer och hämta blommor. Han börjar på den första staden och
-vill nå den sista. Räkna ut bensin bla bla. Ni löser flavor, bara för att visa ungefär hur det ska gå (nämn $N$ städer, relevant information och flavor text. ni vet redan)
-
+\problemname{Magnus i manhattan}
+Skolavslutningen närmar sig och med det följer avslutet av Magnus favoritkurs, nämligen Matte 5. 
+I och med att treorna tar studenten är det extra viktigt att han får in alla arbeten från sina elever i tid så att dessa hinner rättas innan betygen sätts.
+Men trots detta, är det flera personer som inte har skickat in sina arbeten! Magnus har därför tagit reda på var alla sina elever håller hus och tänker åka ut till dessa för att samla in deras slutuppgifter.
+Eftersom både Magnus och alla hans elever bor i det rutnätsformade Manhattan är vägbeskrivningarna inte särskilt svåra. Problemet är att hans bil helt har fått slut på bensin.
+Eftersom Magnus ibland gör lite slarvfel när han ska rätta sina elevers prov, vill han inte riskera att göra en felberäkning i hur mycket bensin han behöver tanka när bensinpriserna är så höga.
+Han har tagit fram koordinaterna och vilken ordning han ska besöka eleverna i, men behöver din hjälp att räkna ut exakt hur mycket bensin som han behöver fylla sin tank med så att han precis kan åka till alla elever och hem igen.
+Vi antar att han bara kan köra mellan husen och därmed bara följa rutnätslinjerna och att varje steg i rutnätet kostar en bränsleenhet.
+Koordinaterna för Magnus hem är (0, 0)
 
 \section*{Indata}
 Den första raden innehåller ett heltal: $2\leq N \leq 10^6$ -- antalet städer. 
-Därefter följer $N$ rader med två tal, $-10^9 \leq x \leq 10^9$, $-10^9 \leq y \leq 10^9$ positionen på städerna.
+Därefter följer $N$ rader med två tal, $-10^9 \leq x \leq 10^9$, $-10^9 \leq y \leq 10^9$ positionen på vardera stad.
 
 
 \section*{Utdata}
@@ -20,9 +25,10 @@ För att få poäng för en grupp så måste du klara alla testfall i gruppen.
   \hline
   Grupp & Poängvärde & Gränser \\ \hline
   $2$   & $15$       & $N=2$ \\ \hline
-  $1$   & $25$       & $Y=0, 0 \leq X$ och x är stigande \\ \hline
+  $1$   & $25$       & $Y=0, 0 \leq X$ och x-koordinaterna är stigande \\ \hline
   $4$   & $60$       & Inga ytterligare begränsningar  \\ \hline
 \end{tabular}
 
 \section*{Förklaring av exempelfall}
-I första exemplet behöver .... färdas 7 steg från hus 1 till hus 2, och 8 steg från hus 2 till 3 hus, vilket blir 15 steg sammanlagt.
+I första exemplet behöver Magnus färdas 7 steg från hus 1 till hus 2, och 8 steg från hus 2 till 3 hus, vilket blir 15 bränsleenheter sammanlagt.
+I andra exemplet är avståndet mellan hus 1 och hus 2 $(1069-69)+(420-240)=1180$ steg, och från hus 2 till 3 blir det $(69-(-1337))+(240-(-69))=1715$ steg, vilket blir 2895 bränseleenheter sammanlagt.
