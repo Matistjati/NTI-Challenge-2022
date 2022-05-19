@@ -1,9 +1,7 @@
-author: Joshua Andersson and Rasmus Hulthe
+author: John Hedin, Joshua Andersson and Erik Hedin
 source: NTI Challenge 2022
 rights_owner: Joshua Andersson
 license: cc by-sa
 type: scoring
 grading:
     show_test_data_groups: yes
-
-validator_flags: float_tolerance 1e-4
