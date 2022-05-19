@@ -28,4 +28,5 @@ if not parity:
 
 
 print(len(moves))
-print(" ".join([str(i) for i in moves]))
+if len(moves):
+    print(" ".join([str(i) for i in moves]))

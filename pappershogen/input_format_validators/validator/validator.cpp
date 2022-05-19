@@ -6,22 +6,20 @@ using namespace std;
 void ReadLn(int len) {
 
 	for (int j = 0; j < len; j++) {
-		char ch = Char();
+		
 	}
 	Endl();
 }
 
 void run()
 {
-	int r = Int(1, Arg("max_r")); Space();
-    int c = Int(1, Arg("max_c")); Endl();
-    assert(c>=r*3);
+	int n = Int(1, Arg("max_n")); Endl();
 
-    for (int i = 0; i < r; i++)
+    for (int i = 0; i < n; i++)
     {
-        ReadLn(c);
+        char ch = Char();
+        assert(ch=='U'||ch=='N');
     }
-
-
+    Endl();
 	Eof();
 }

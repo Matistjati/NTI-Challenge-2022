@@ -29,26 +29,16 @@ include_group group1
 limits max_n=10
 tc g2-1 gen_random  n=0 mtc=20 seed=0
 tc g2-2 gen_random  n=0 mtc=21 seed=0
-tc g2-3 gen_random  n=10 max_moves=5 seed=69
-tc g2-4 gen_random  n=9  max_moves=5 seed=54542745
-tc g2-5 gen_random  n=8  max_moves=5 seed=4586654
-tc g2-6 gen_random  n=7  max_moves=5 seed=876232
-tc g2-7 gen_random  n=6  max_moves=5 seed=7698765
-tc g2-8 gen_random  n=5  max_moves=5 seed=245587
-tc g2-9 gen_random  n=4  max_moves=5 seed=587913413
-tc g2-10 gen_random n=3  max_moves=5 seed=7608734
-tc g2-11 gen_random n=2  max_moves=5 seed=24588946
-tc g2-12 gen_random n=10 max_moves=3 seed=2134654265
-tc g2-13 gen_random n=10 max_moves=3 seed=679746542
-tc g2-14 gen_random n=10 max_moves=3 seed=3412684
-tc g2-15 gen_random n=10 max_moves=3 seed=7846763
-tc g2-16 gen_random n=10 max_moves=3 seed=134243
-tc g2-17 gen_random n=10 max_moves=3 seed=576834
-tc g2-18 gen_random n=10 max_moves=3 seed=13463124
-tc g2-19 gen_random n=10 max_moves=3 seed=23434567675
-tc g2-20 gen_random n=10 max_moves=3 seed=3245423
-tc g2-21 gen_random n=10 max_moves=3 seed=132436
-tc g2-22 gen_random n=10 max_moves=3 seed=3658765
+tc g2-3 gen_random  n=10 max_moves=5 seed=47864687
+tc g2-4 gen_random  n=10 max_moves=5 seed=54542745
+tc g2-5 gen_random  n=10 max_moves=5 seed=76764
+tc g2-6 gen_random  n=10 max_moves=5 seed=876232
+tc g2-7 gen_random  n=10 max_moves=5 seed=80597
+tc g2-8 gen_random  n=10 max_moves=5 seed=6538356
+tc g2-9 gen_random  n=10 max_moves=5 seed=6356543
+tc g2-10 gen_random n=10 max_moves=5 seed=7608734
+tc g2-11 gen_random n=10 max_moves=5 seed=394
+
 
 # 2 Wrong
 group group3 10
@@ -84,7 +74,7 @@ include_group group1
 limits max_n=100000
 tc g4-1 gen_random  n=0 mtc=40 seed=0
 tc g4-2 gen_random  n=0 mtc=41 seed=0
-tc g4-3 gen_random  n=0 mtc=42 seed=0
+tc g4-3 gen_random  n=100000 odd_even=1 seed=654536
 tc g4-4 gen_random  n=100000 odd_even=1 seed=14331246
 tc g4-5 gen_random  n=100000 odd_even=1 seed=452536
 tc g4-6 gen_random  n=100000 odd_even=1 seed=245653
@@ -121,7 +111,7 @@ tc g5-7 gen_random  n=1000 seed=4678674
 tc g5-8 gen_random  n=1000 seed=2452457
 tc g5-9 gen_random  n=1000 seed=567899587
 tc g5-10 gen_random n=500  seed=68759578
-tc g5-11 gen_random n=500  seed=238792387
+tc g5-11 gen_random n=500  seed=9875634
 tc g5-12 gen_random n=500  seed=3245673564
 tc g5-13 gen_random n=500  seed=467245
 tc g5-14 gen_random n=696  seed=356753647

@@ -22,7 +22,7 @@ def get_manual(id):
     manual_tc = {"1": ["1\nU", "1\nN"],
                  "2": ["9\nUUUUUUUUN", "8\nNNNUUNUN"],
                  "3": ["5\nNUUUU", "52\nUUUUUUUUUUNUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU", "172\n" + "U"*172],
-                 "4": ["1\nU", "1\nN", "7\nUNUNUNU", "5\nNUNUN"]}
+                 "4": ["7\nUNUNUNU", "5\nNUNUN"]}
 
     return manual_tc[g][n]
     
@@ -97,10 +97,4 @@ else:
         if judge_sol(to_bin(tc)) <= max_moves:
             print(tc)
             break
-
-
-
-
-
-
 
