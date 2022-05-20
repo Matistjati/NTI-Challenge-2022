@@ -17,15 +17,15 @@ sample_manual 1
 sample_manual 2
 
 # All left
-group group1 15
+group group1 10
 limits max_n=100000 max_m=100000 max_l=1000000000
 tc g1-1 gen_random left=1 l=1000000000 n=100000 m=100000 seed=69
 tc g1-2 gen_random left=1 l=1000000000 n=5000 m=100000 seed=23456245
 tc g1-3 gen_random left=1 l=1000000000 n=100000 m=5000 seed=5386635
 tc g1-4 gen_random left=1 l=1000000000 n=10 m=20 seed=68521435
 
-# Small l
-group group2 15
+# Small l, n=1
+group group2 20
 limits max_n=1 max_m=100000 max_l=1000000000
 tc g2-1 gen_random left=0 l=1000000000 n=1 m=20 seed=42457
 tc g2-2 gen_random left=0 l=1000000000 n=1 m=100000 seed=2345245245
